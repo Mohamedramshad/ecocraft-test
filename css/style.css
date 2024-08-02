@@ -308,7 +308,7 @@
   }
   .el:nth-child(1) .el__bg:before {
     transition-delay: 0s;
-    background-image: url(/ecocraft/image/beddd.jpg);
+    background-image: url(/image/beddd.jpg);
 
   }
   .el:nth-child(2) {
@@ -328,7 +328,7 @@
   }
   .el:nth-child(2) .el__bg:before {
     transition-delay: 0.1s;
-    background-image: url(/ecocraft/image/4_dining_area.webp);
+    background-image: url(/image/one.jpg);
   }
   .el:nth-child(3) {
     transform: translate3d(210.4166666667%, 0, 0);
@@ -347,7 +347,7 @@
   }
   .el:nth-child(3) .el__bg:before {
     transition-delay: 0.2s;
-    background-image: url(/ecocraft/image/plywoodbg.PNG)
+    background-image: url(/image/plywoodbg.PNG)
 
   }
   .el:nth-child(4) {
@@ -368,7 +368,7 @@
   .el:nth-child(4) .el__bg:before {
     transition-delay: 0.3s;
     background-image: url(/);
-    background-image: url(/ecocraft/image/last.jpg);
+    background-image: url(/image/last.jpg);
 
 
   }
@@ -389,7 +389,7 @@
   }
   .el:nth-child(5) .el__bg:before {
     transition-delay: 0.4s;
-    background-image: url(/ecocraft/image/office_space_8.webp);
+    background-image: url(/image/office_space_8.webp);
 
   }
   .el:hover .el__bg:after {
