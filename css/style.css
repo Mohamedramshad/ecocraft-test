@@ -308,7 +308,7 @@
   }
   .el:nth-child(1) .el__bg:before {
     transition-delay: 0s;
-    background-image: url(/image/one.PNG);
+    background-image: url(../image/one.PNG);
 
   }
   .el:nth-child(2) {
@@ -328,7 +328,7 @@
   }
   .el:nth-child(2) .el__bg:before {
     transition-delay: 0.1s;
-    background-image: url(/image/two.PNG);
+    background-image: url(../image/two.PNG);
   }
   .el:nth-child(3) {
     transform: translate3d(210.4166666667%, 0, 0);
@@ -347,7 +347,7 @@
   }
   .el:nth-child(3) .el__bg:before {
     transition-delay: 0.2s;
-    background-image: url(/image/last.jpg)
+    background-image: url(../image/last.jpg)
 
   }
   .el:nth-child(4) {
@@ -368,7 +368,7 @@
   .el:nth-child(4) .el__bg:before {
     transition-delay: 0.3s;
     background-image: url(/);
-    background-image: url(/image/22);
+    background-image: url(../image/kitechen2.jpg);
 
 
   }
@@ -389,7 +389,7 @@
   }
   .el:nth-child(5) .el__bg:before {
     transition-delay: 0.4s;
-    background-image: url(/image/plywoodbg.PNG);
+    background-image: url(../image/officenew.jpg);
 
   }
   .el:hover .el__bg:after {
@@ -424,9 +424,7 @@
     right: 5px;
   }
 
-  .stroked-text {
-    -webkit-text-stroke: 2px black;  /* Custom stroke width and color */
-}
+
 
 #animatedIcon {
   transition: transform 0.3s ease-in-out; /* Smooth transition */
@@ -467,6 +465,9 @@
 
   .animate-fadeInRight {
     animation-delay: 1s;
+  }
+  .stroked-text {
+    -webkit-text-stroke: 2px black; 
   }
 }
 
@@ -588,6 +589,21 @@
 .delay-150 {
   animation-delay: 150ms; /* Custom class to delay animation */
 }
+
+#greenbg{
+  background-image: radial-gradient(
+        circle at 20% 100%,
+        rgba(184, 255, 184, 0.1) 0%,    /* Light green */
+        rgba(184, 255, 184, 0.1) 33%,   /* Light green */
+        rgba(96, 192, 96, 0.1) 33%,     /* Medium green */
+        rgba(96, 192, 96, 0.1) 66%,     /* Medium green */
+        rgba(7, 128, 7, 0.1) 66%,       /* Dark green */
+        rgba(7, 128, 7, 0.1) 99%        /* Dark green */
+      ),
+      linear-gradient(40deg, #014d02, #1b7e1e, #28a745, #87d991);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 /* font 
 

@@ -59,6 +59,7 @@
     transform: scale(1);
     transition: all 0.4s ease-in;
     cursor: pointer;
+    
   }
   
   #about_bg .content button:is(:hover, :focus) {
