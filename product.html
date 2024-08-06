@@ -7,6 +7,29 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/09492618d1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Craft</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.1/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Define the animation using @keyframes */
+        @keyframes scrollUp {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Tailwind custom classes */
+        .animate-scroll-up {
+            animation: scrollUp 1s ease-out forwards;
+        }
+    </style>
 </head>
 <body>
     <section class="bg-white fixed top-0 left-0 right-0 z-50 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
@@ -60,17 +83,16 @@
 
     </section>
 
-    <section>
-        <section class="wrapper">
-            <h1 class="text-[28px] text-center pt-[4%]"> <span class="text-green-700">ECO CRAFT</span> UNIQUE PERSPECTIVE</h1>
-            <p class=" text-[12px] md:text-[16px] text-center pt-[1%] ">
-                At Ecocraft, our commitment extends beyond delivering top-tier quality – we pledge products that align with their value. Our dedication to ethically sourced timber from sustainable farmlands underscores our mission to preserve natural ecosystems. As the frontrunners of India's eco-friendly plywood, we take on the responsibility of eradicating social and environmental threats. With state-of-the-art automated technology, we assure timely deliveries within a cost-effective range, all while upholding ecological equilibrium.
-                
-            </p>
-        </section>
+    <section class="wrapper pt-8">
+        <h1 class="text-[28px] text-center pt-[4%]animate-scroll-up">
+           <span class="text-green-700">ECO CRAFT</span>  UNIQUE PERSPECTIVE
+        </h1>
+        <p class="text-[12px] md:text-[16px] text-center pt-[1%] animate-scroll-up">
+            At Ecocraft, our commitment extends beyond delivering top-tier quality – we pledge products that align with their value. Our dedication to ethically sourced timber from sustainable farmlands underscores our mission to preserve natural ecosystems. As the frontrunners of India's eco-friendly plywood, we take on the responsibility of eradicating social and environmental threats. With state-of-the-art automated technology, we assure timely deliveries within a cost-effective range, all while upholding ecological equilibrium.
+        </p>
     </section>
 
-    <section class="pt-[4%] mt-[2%] w-full  bg-[url('./image/bg.jpg')] items-end">
+    <section class="pt-[4%] mt-[2%] w-full   items-end"   style="background-image: url(/image/ecobg1.jpg);">
         <section class=" flex-wrap wrapper md:flex  ">
             <div class="w-full  md:w-[40%] pb-6 pl-[10%]">
                 <img src="./image/Platinum_Plus.webp" alt="" class="w-full  md:w-[70%] ">
@@ -78,10 +100,7 @@
             </div>
 
             <div class=" md:w-[48%] mb-[8%] ">
-                <div class=" mt-[10%] mb-[5%]  md:pl-[50%]">
-                  <a href=" " class="w-full  md:items-end-end py-[2%] px-[6%] bg-slate-300 rounded-full ">Also available in BLOCKBOARD</a>
-
-                </div>
+                
                 <img src="./image/platplus.png" alt="" class="pb-[5%]">
                 <div class=" mb-[4%] flex">
                     <a href="" class="py-[2%] px-[6%] rounded-full border border-green-800 text-[14px] bg-green-500 mr-[8%]" >DESCRIPTION
@@ -90,7 +109,7 @@
                     </a>
                     
                 </div>
-                <p class="w-full text-justify  md:pt-[3%]">
+                <p class=" w-full pb-[5] text-justify  md:pt-[3%]">
                     Eocarft Plus stands at the pinnacle of premium quality plywood. It is approved by Lloyds-United Kingdom, adhering to the British Standard BS 1088. 
                     Ideal for luxury furniture and exclusively crafted from premium quality imported Gurjan Timber it is manufactured by top-of-the-line technology to deliver ultimate sophistication. Platinum Plus is the best plywood money can buy!
                 </p>
@@ -110,10 +129,7 @@
             </div>
 
             <div class=" md:w-[48%] mb-[8%] ">
-                <div class=" mt-[10%] mb-[5%]  md:pl-[50%]">
-                  <a href=" " class="w-full  md:items-end-end py-[2%] px-[6%] bg-slate-300 rounded-full ">Also available in BLOCKBOARD</a>
-
-                </div>
+                
                 <img src="./image/platplus.png" alt="" class="pb-[5%]">
                 <div class=" mb-[4%] flex">
                     <a href="" class="py-[2%] px-[6%] rounded-full border border-green-800 text-[14px] bg-green-500 mr-[8%]" >DESCRIPTION
@@ -214,5 +230,21 @@
     
         </section>
       </footer>
+      <!-- Script for Intersection Observer -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-scroll-up');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.animate-scroll-up').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
 </body>
 </html>

@@ -6,6 +6,14 @@
     <title>Document</title><link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/09492618d1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/about.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/tsparticles@1.26.0/dist/tsparticles.min.js"></script>
+    <script defer src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script defer src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="about.js"></script>
     
 </head>
 <body>
@@ -68,7 +76,7 @@
     </section>
 
     <section class="pt-[5%]">
-        <section class="wrapper flex justify-center items-center flex-wrap">
+        <section class="wrapper flex  items-center flex-wrap">
           <div class="w-[50%] slide-in">
             <img
               src="./image/about2.jpg"
@@ -116,7 +124,7 @@
       <section class="flex justify-between text-white mt-[8%] flex-wrap">
         <div class="w-full mb-[4%] md:w-[48%] pl-[10%] bg-black pb-[6%] rounded-ee-full slide-in-left opacity-0">
             <h2 class="mt-[6%] mb-[2%]">OUR VISION</h2>
-            <p class=" text-justify md:w-[80%] ">
+            <p class=" text-[16px] pl-[4%]text-justify md:w-[80%] ">
                 We shall always strive to exhibit exemplary focus, transparency, speed and passion to evolve as the preferred choice of each consumer, providing them with the ideal product that is tailored to the changing times and their evolving aspirations. We aim to contribute meaningfully towards sustainability in the industry, nation and society in general by adopting practices, processes and technology that is relevant and best in class.
             </p>
         </div>
@@ -141,30 +149,65 @@
         </div>
     </section>
 
-    <section class=" text-white mt-[5%] mb-[5%]  ">
-        <section class="wrapper flex md:justify-between items-center flex-wrap  ">
-            <div class=" bg-black w-full mb-[4%] pt-[4%] py-[5%] rounded px-[5%]  md:w-[48%] ">
-                <h3 class="text-green-500">BRAND STORY</h3>
-                <p class=" sm:text-justify md:text-[24px]">
-                    Austin Plywood was rewarded by customer preference for its outstanding quality; it became the <span class="text-green-500"> only brand in the country to be approved by Lloyds Register  and was </span> certified as a BS-1088 product
-                </p>
+    <section class="text-white mt-[5%] mb-[5%]">
+        <section class="wrapper flex md:justify-between items-center flex-wrap">
+          <div id="brandStory" class="bg-black w-full mb-[4%] pt-[4%] py-[5%] rounded px-[5%] md:w-[48%] animate-slideDown">
+            <h3 class="text-green-500">BRAND STORY</h3>
+            <p class="sm:text-justify md:text-[24px]">
+              Ecocraft Plywood was rewarded by customer preference for its outstanding quality; it became the <span class="text-green-500"> only brand in the country to be approved by Lloyds Register and was </span> certified as a BS-1088 product
+            </p>
+          </div>
+          <div id="foundersNote" class="w-full mt-[5%] bg-gray-200 pt-[4%] text-black py-[5%] px-[5%] rounded md:w-[48%] animate-slideDown">
+            <p>
+              Founded by father son duo of Mr. Surendra Agarwal and Mr. Nishant Agarwal in the year 2006, Austin Plywood started with the objective of fulfilling the needs of the discerning user for high quality premium plywood.
+            </p>
+      
+            <p>
+              The market was flush with popular brands who were manufacturing and supplying ordinary quality plywood in the name of waterproof category. Austin Plywood changed the landscape and was immediately rewarded by customer preference for its outstanding quality; it became the only brand in the country to be approved by Lloyds Register and was certified as a BS-1088 product.
+              Read More
+            </p>
+            <div class="pt-[5%] pb-[3%]">
+              <a href="" class="bg-green-500 py-[2%] px-[5%] text-black rounded-full">Read More</a>
             </div>
-            <div class="w-full mt-[5%] bg-gray-200 pt-[4%] text-black py-[5%] px-[5%] rounded md:w-[48%]  ">
-                <p>
-                    Founded by father son duo of Mr. Surendra Agarwal and Mr. Nishant Agarwal in the year 2006, Austin Plywood started with the objective of fulfilling the needs of the discerning user for high quality premium plywood.
-                </p>
-
-                <p>
-                    The market was flush with popular brands who were manufacturing and supplying ordinary quality plywood in the name of water proof category. Austin Plywood changed the landscape and was immediately rewarded by customer preference for its outstanding quality, it became the only brand in the country to be approved by Lloyds Register and was certified as a BS-1088 product.
-                     Read More
-                </p>
-                <div class="pt-[5%] pb-[3%]">
-                    <a href="" class="bg-green-500 py-[2%] px-[5%] text-black rounded-full ">Read More</a>
-                </div>
-            </div>
+          </div>
         </section>
-    </section>
+      </section>
+      
+      
+      <section id="about_bg" class="">
+        <div class="content">
+          <h1>Let's Travel The World Together!</h1>
+          <p>
+            Our tours are designed to transport you to the heart of the world's
+            most captivating destinations, creating memories that will last a
+            lifetime. You can uncover the hidden gems, iconic landmarks, and
+            unique cultural treasures that make each destination special.
+          </p>
+          <button>Explore Tours</button>
+        </div>
+  
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./image/zaize1.jpg" />
+            </div>
 
+            <div class="swiper-slide">
+              <img src="./image/zaize2.jpg" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./image/zaize3.jpg" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./image/zaize4.jpg" />
+            </div>
+
+          </div>
+        </div>
+      </section>
+      
     <!-- <section class="flex flex-wrap ">
         <div class="w-full md:w-[40%]">
             <img src="./image/employee.PNG" alt="" class="pt-[18%] ">
