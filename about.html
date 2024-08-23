@@ -9,74 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/about.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/tsparticles@1.26.0/dist/tsparticles.min.js"></script>
     <script defer src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script defer src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script defer src="about.js"></script>
-    <style>
-      @keyframes slideDown {
-        0% {
-          transform: translateY(-50px);
-          opacity: 0;
-        }
-        100% {
-          transform: translateY(0);
-          opacity: 1;
-        }
-      }
-      
-      @keyframes slideUp {
-        0% {
-          transform: translateY(50px);
-          opacity: 0;
-        }
-        100% {
-          transform: translateY(0);
-          opacity: 1;
-        }
-      }
-  
-      .animate-slideDown {
-        animation: slideDown 3s ease-out forwards;
-      }
-  
-      .animate-slideUp {
-        animation: slideUp 3s ease-out forwards;
-      }
-    </style>
-    <style>
-      @keyframes slideInFromLeft {
-        0% {
-          transform: translateX(-100%);
-          opacity: 0;
-        }
-        100% {
-          transform: translateX(0);
-          opacity: 1;
-        }
-      }
-      
-      @keyframes slideInFromRight {
-        0% {
-          transform: translateX(100%);
-          opacity: 0;
-        }
-        100% {
-          transform: translateX(0);
-          opacity: 1;
-        }
-      }
-  
-      .animate-slideInFromLeft {
-        animation: slideInFromLeft 1s ease-out forwards;
-      }
-  
-      .animate-slideInFromRight {
-        animation: slideInFromRight 1s ease-out forwards;
-      }
-    </style>
-  
+    
 </head>
 <body>
   <a href="#your-target-section" class="fixed right-0 top-1/2 mb-[5%] transform -translate-y-1/2 bg-red-500 text-white py-2 px-2 rounded-l-lg shadow-lg hover:bg-red-600 transition-colors z-50">
@@ -94,11 +35,11 @@
             </div>
             <div class="hidden md:block">
                 <ul class="flex space-x-4 md:space-x-6 lg:space-x-10  mt-[5%]">
-                    <li><a href="index.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">Home</a></li>
-                    <li><a href="about.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">About Us</a></li>
-                    <li><a href="product.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">Products</a></li>
-                    <li><a href="gallery.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">Gallery</a></li>
-                    <li><a href="#" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-black transition duration-300 text-white px-[20%] py-[12%] will-change-auto hover:will-change-scroll bg-green-700 rounded">Contact</a></li>
+                    <li><a href="index.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-1 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">Home</a></li>
+                    <li><a href="about.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-1 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">About Us</a></li>
+                    <li><a href="product.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-1 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">Products</a></li>
+                    <li><a href="gallery.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-1 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">Gallery</a></li>
+                    <li><a href="#" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-1 border-green-700 mb-[10%]  hover:text-black transition duration-300 text-white px-[20%] py-[12%] will-change-auto hover:will-change-scroll bg-green-700 rounded">Contact</a></li>
                 </ul>
             </div>
             <!-- Mobile Menu Button -->
@@ -141,7 +82,7 @@
     animation: slideInLeft 1s ease-out forwards;
 }
 </style>
-    <section >
+    <!-- <section >
         <img src="./image/about.PNG" alt="" class=" mt-[10%] md:mt-[6%]">
     </section>
 
@@ -171,9 +112,9 @@
             </p>
           </div>
         </section>
-      </section>
+      </section> -->
       
-    <style>
+    <!-- <style>
         @keyframes slideIn {
           0% {
             transform: translateX(-100%);
@@ -188,7 +129,154 @@
         .slide-in {
           animation: slideIn 1s ease-out forwards;
         }
-      </style>
+      </style> -->
+
+      <section class="bg-gray-100 text-gray-800 py-12 px-6 lg:px-20 mt-[5%]">
+        <div class="max-w-7xl mx-auto">
+            <!-- Welcome Message -->
+            <div class="text-center mb-12">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 animate-fade-in">
+                    Welcome to <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-600">EcoCraft </span> 
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 animate-slide-in-left">
+                    Strong, Sustainable & Stylish
+                </p>
+                <p class="text-lg md:text-xl text-gray-500 italic mt-2 animate-slide-in-right">
+                    "Build Your Dream With Us"
+                </p>
+            </div>
+    
+            <!-- Specialization -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-zoom-in">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-2">MANUFACTURING</h2>
+                    <p class="text-gray-600">
+                        EcoCraft is a part of Star Group, which has established itself as a prominent player in the Indian manufacturing and service industry with 40 years of experience.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-zoom-in">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Plywoods</h2>
+                    <p class="text-gray-600">
+                        Its diverse range of products includes Nostalgia, Wood Line, Eco Craft, Woodcraft, Eco Friend, Magnum, Nostalgia, and Ultimate.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-zoom-in">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Social Concern</h2>
+                    <p class="text-gray-600">
+                        With a strong focus on social responsibility, the company has been planting trees as a part of Project Green Hand.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Experience -->
+            <div class="text-center mb-12">
+              <h2 class="text-[30px] md:text-[50px] font-semibold text-gray-800 animate-fade-in">
+                <span id="counter"  data-target="40">0</span> Years Industrial Experience
+            </h2>
+            
+            <div class="mt-8 flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-12">
+                    <div class="text-gray-600 animate-slide-in-left">
+                        <p class="text-xl font-bold text-gray-800">Plywood Manufacturing and Distribution</p>
+                        <p class=" md:text-[30px]">80%</p>
+                    </div>
+                    <div class="text-gray-600 animate-slide-in-right">
+                        <p class="text-xl font-bold text-gray-800">PVC Board and WPC Board Production</p>
+                        <p class="md:text-[30px]">70%</p>
+                    </div>
+                    <div class="text-gray-600 animate-slide-in-left">
+                        <p class="text-xl font-bold text-gray-800">Timber Production</p>
+                        <p class="md:text-[30px]">70%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- count  -->
+
+            <script>
+
+        document.addEventListener('scroll', function() {
+            const counterElement = document.getElementById('counter');
+            
+            if (!counterElement) return;
+
+            const counterPosition = counterElement.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+            
+            if (counterPosition < screenPosition && !counterElement.classList.contains('counted')) {
+                counterElement.classList.add('counted');
+                countUp(counterElement);
+            }
+        });
+
+        function countUp(element) {
+            const target = +element.getAttribute('data-target');
+            let count = 0;
+            const speed = 50; // Speed of counting (in milliseconds)
+
+            const interval = setInterval(() => {
+                count += 1;
+                element.innerText = count;
+
+                if (count >= target) {
+                    clearInterval(interval);
+                    element.innerText = target; // Ensure the final value is the target
+                }
+            }, speed);
+        }
+
+            </script>
+
+
+    
+            <!-- Contact Information -->
+            <div class="text-center">
+                <p class="text-lg text-gray-600 animate-fade-in">Contact us at: +91 9447440617 / +91 7902245534</p>
+                <p class="text-lg text-gray-600 animate-fade-in">Email: <a href="mailto:starply555@gmail.com" class="text-blue-500 hover:underline">starply555@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tailwind CSS Animations (Add these to your Tailwind CSS config) -->
+    <style>
+    @keyframes fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    
+    @keyframes slide-in-left {
+        from { transform: translateX(-100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+    
+    @keyframes slide-in-right {
+        from { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+    
+    @keyframes zoom-in {
+        from { transform: scale(0.8); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+    
+    .animate-fade-in {
+        animation: fade-in 1s ease-in-out;
+    }
+    
+    .animate-slide-in-left {
+        animation: slide-in-left 1s ease-in-out;
+    }
+    
+    .animate-slide-in-right {
+        animation: slide-in-right 1s ease-in-out;
+    }
+    
+    .animate-zoom-in {
+        animation: zoom-in 1s ease-in-out;
+    }
+    </style>
+    
+    
+    
       
 
       <section class="flex justify-between text-white mt-[8%] flex-wrap">
@@ -251,7 +339,7 @@
     </section>
     
 
-    <section class="text-white mt-[5%] mb-[5%]">
+    <!-- <section class="text-white mt-[5%] mb-[5%]">
       <section class="wrapper flex flex-col-reverse md:flex-row md:justify-between items-center">
         <div id="brandStory" class="bg-black w-full mb-[4%] pt-[4%] py-[5%] rounded px-[5%] md:w-[48%] animate-slideDown">
           <h3 class="text-green-500 text-[24px]">BRAND STORY</h3>
@@ -271,7 +359,49 @@
           </div>
         </div>
       </section>
+    </section> -->
+
+    <!-- About Section -->
+    <section class="about-section bg-gray-100 py-16">
+      <div class="container mx-auto px-4 md:px-8 text-center">
+        <h2 class="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-600 mb-12" data-aos="fade-down">Our Specialization</h2>
+        
+    
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Manufacturing Section -->
+          <div class="about-card bg-white p-6 rounded-lg shadow-lg transform transition duration-1000 hover:scale-105" data-aos="fade-up">
+            <img src="./image/factory.png" alt="Manufacturing" class=" w-[20%] mb-4">
+            <h3 class="text-2xl font-semibold text-green-700 mb-3">MANUFACTURING</h3>
+            <p class="text-gray-700">
+              Eco craft is a part of Star Group, which has established itself as a prominent entity in the Indian manufacturing and service industry with 40 years of experience.
+            </p>
+          </div>
+     
+          <!-- Plywoods Section -->
+          <div class="about-card bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+            <img src="./image/picker.png" alt="Plywoods" class="w-[20%] mb-4">
+            <h3 class="text-2xl font-semibold text-green-700 mb-3">Plywoods</h3>
+            <p class="text-gray-700">
+              Our diverse range of products includes Nostalgia, Woodline, Eco Craft, Woodcraft, Eco Friend, Magnum, Ultimate.
+            </p>
+          </div>
+    
+          <!-- Social Concern Section -->
+          <div class="about-card bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105" data-aos="fade-up" data-aos-delay="400">
+            <img src="./image/people.png" alt="Social Concern" class="w-[20%] mb-4">
+            <h3 class="text-2xl font-semibold text-green-700 mb-3">Social Concern</h3>
+            <p class="text-gray-700">
+              With a strong focus on social responsibility, the company has been planting trees as a part of Project Green Hand.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <script>
+      AOS.init();
+    </script>
+    
     
       
       
