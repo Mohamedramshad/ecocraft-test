@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="bg-white fixed top-0 left-0 right-0 z-50 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+      <section class="wrapper flex items-center justify-between h-[50px] mb-[3%] px-4 md:px-8 ">
+          <div class="w-[50%] md:w-[40%] flex">
+              <img src="./image/logo.png" alt="Ecocraft Logo" class="w-[70%] md:w-[40%]">
+          </div>
+          <div class="hidden md:block">
+              <ul class="flex space-x-4 md:space-x-6 lg:space-x-10  mt-[5%]">
+                  <li><a href="index.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">Home</a></li>
+                  <li><a href="about.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">About Us</a></li>
+                  <li><a href="product.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">Products</a></li>
+                  <li><a href="gallery.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">Gallery</a></li>
+                  <li><a href="#" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-black transition duration-300 text-white px-[20%] py-[12%] will-change-auto hover:will-change-scroll bg-green-700 rounded">Contact</a></li>
+              </ul>
+          </div>
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden flex items-center">
+              <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+              </button>
+          </div>
+      </section>
+  
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden bg-white shadow-lg rounded-lg py-2 hidden">
+          <ul class="flex flex-col space-y-2 px-4 mt-[5%]">
+              <li><a href="index.html" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Home</a></li>
+              <li><a href="about.html" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">About Us</a></li>
+              <li><a href="product.html" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Products</a></li>
+              <li><a href="gallery.html" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Gallery</a></li>
+              <li><a href="#" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Contact</a></li>
+          </ul>
+      </div>
+  
+      <!-- JavaScript for Mobile Menu Toggle -->
+      <script>
+          document.getElementById('menu-toggle').addEventListener('click', function() {
+              var menu = document.getElementById('mobile-menu');
+              menu.classList.toggle('hidden');
+          });
+      </script>
+  </section>
+
+<body>
+    <div class="section-fluid-main">
+        <div class="section">
+            <div class="info-wrap mob-margin">
+                <p class="title-up">EcoCraft chair</p>
+                
+                <div class="section-fluid">
+                    <input class="desc-btn" type="radio" id="desc-1" name="desc-btn" checked />
+                    <label for="desc-1">Description</label>
+                    <input class="desc-btn" type="radio" id="desc-2" name="desc-btn" />
+                    <label for="desc-2">Details</label>
+                    <div class="section-fluid desc-sec accor-1">
+                        
+                    </div>
+                    <div class="section-fluid desc-sec accor-2">
+                        <div class="section-inline">
+                            <p><span>76</span>cm<br>Lenght</p>
+                        </div>
+                        <div class="section-inline">
+                            <p><span>68</span>cm<br>Width</p>
+                        </div>
+                        <div class="section-inline">
+                            <p><span>87</span>cm<br>Height</p>
+                        </div>
+                        <div class="section-inline">
+                            <p><span>10</span>kg<br>Weight</p>
+                        </div>
+                    </div>
+                </div>
+                <h5>Choose upholstery:</h5>
+            </div>
+            <div class="clearfix"></div>
+            <input class="color-btn for-color-1" type="radio" id="color-1" name="color-btn" checked />
+            <label class="first-color" for="color-1"></label>
+            <input class="color-btn for-color-2" type="radio" id="color-2" name="color-btn" />
+            <label class="color-2" for="color-2"></label>
+            <input class="color-btn for-color-3" type="radio" id="color-3" name="color-btn" />
+            <label class="color-3" for="color-3"></label>
+            <input class="color-btn for-color-4" type="radio" id="color-4" name="color-btn" />
+            <label class="color-4" for="color-4"></label>
+            <input class="color-btn for-color-5" type="radio" id="color-5" name="color-btn" />
+            <label class="color-5" for="color-5"></label>
+            <input class="color-btn for-color-6" type="radio" id="color-6" name="color-btn" />
+            <label class="color-6" for="color-6"></label>
+            <div class="clearfix"></div>
+            <div class="info-wrap">
+                <a href="#" class="btn"><i class="uil uil-shopping-cart icon"></i> Explore product</a>
+            </div>
+            <div class="img-wrap chair-1"></div>
+            <div class="img-wrap chair-2"></div>
+            <div class="img-wrap chair-3"></div>
+            <div class="img-wrap chair-4"></div>
+            <div class="img-wrap chair-5"></div>
+            <div class="img-wrap chair-6"></div>
+            <div class="back-color"></div>
+            <div class="back-color chair-2"></div>
+            <div class="back-color chair-3"></div>
+            <div class="back-color chair-4"></div>
+            <div class="back-color chair-5"></div>
+            <div class="back-color chair-6"></div>
+
+           
+        </div>
+    </div>
+
+
+</body>
+
+</html>
