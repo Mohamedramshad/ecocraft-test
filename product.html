@@ -140,6 +140,40 @@
 
     </section> -->
     <!-- unique -->
+
+    
+     <!-- Arrow Button -->
+
+     <button id="scrollTopBtn" class="fixed bottom-4 right-4 p-3 rounded-full bg-gray-600 text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+        <!-- SVG for Up Arrow -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+      </button>
+  
+      <script>
+  
+              // JavaScript to scroll to the top
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+  
+        // Show button when scrolling down
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+  
+        // Scroll to the top when the button is clicked
+        scrollTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+  
+      </script>
+  
+  
+  <!-- arrow button  -->
     <section class="wrapper pt-8 px-4 md:px-12 lg:px-24">
         <h1 class="text-[24px] md:text-[36px] lg:text-[40px] text-center text-gray-900 pt-8 opacity-0 transform translate-y-8 transition duration-1000 ease-out" id="heading">
             <span class="text-green-700 font-bold">ECO CRAFT</span> UNIQUE PERSPECTIVE

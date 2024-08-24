@@ -16,7 +16,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">  
+  <!-- Pop-up  -->
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Swiper and Pop-up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- pop up -->
     <style>
+
 
       /* Custom animation for fade-in-up */
       @keyframes fadeInUp {
@@ -141,6 +152,78 @@
         });
     </script>
 </section>
+
+
+    <!-- Pop-up Modal -->
+    <div id="welcomeModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-50">
+      <div class="bg-white rounded-lg p-8 shadow-lg max-w-sm w-full">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Welcome to EcoCraft</h2>
+          <p class="text-gray-600 mb-6">Your canvas for your innovation</p>
+          <button id="closeModal" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Visit</button>
+      </div>
+    </div>
+
+    <!-- JavaScript for Pop-up and Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        var swiper = new Swiper('.mySwiper', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        // Show the pop-up modal after the site loads
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('welcomeModal').classList.remove('hidden');
+            }, 1000); // Show after 1 second
+        });
+
+        // Close the modal when the close button is clicked
+        document.getElementById('closeModal').addEventListener('click', () => {
+            document.getElementById('welcomeModal').classList.add('hidden');
+        });
+    </script>
+
+    <!-- end pop up -->
+
+   
+
+      <!-- Arrow Button -->
+
+    <button id="scrollTopBtn" class="fixed bottom-4 right-4 p-3 rounded-full bg-gray-600 text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+          <!-- SVG for Up Arrow -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+          </svg>
+    </button>
+
+    <script>
+
+                // JavaScript to scroll to the top
+          const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+          // Show button when scrolling down
+          window.onscroll = function() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  scrollTopBtn.style.display = "block";
+              } else {
+                  scrollTopBtn.style.display = "none";
+              }
+          };
+
+          // Scroll to the top when the button is clicked
+          scrollTopBtn.addEventListener('click', function() {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+
+    </script>
+
+
+    <!-- arrow button  -->
+
 
 
     <section class="mt-[15%] md:mt-0" >  
