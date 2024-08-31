@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVC Product</title><link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/09492618d1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Craft</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.1/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Define the animation using @keyframes */
+        @keyframes scrollUp {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Tailwind custom classes */
+        .animate-scroll-up {
+            animation: scrollUp 1s ease-out forwards;
+        }
+    </style>
+    </script>
+    <style>
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="#your-target-section" class="fixed right-0 top-1/2 mb-[5%] transform -translate-y-1/2 bg-red-500 text-white py-2 px-2 rounded-l-lg shadow-lg hover:bg-red-600 transition-colors z-50">
+        Enquire Now
+    </a>
+    
+    
+<a href="https://wa.me/9526744704" class="fixed right-0 top-1/2 transform -translate-y-1/2 bg-green-500 text-white py-2 px-4 rounded-l-lg shadow-lg hover:bg-red-600 transition-colors z-50">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+    <section class="bg-white fixed top-0 left-0 right-0 z-50 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+        <section class="wrapper flex items-center justify-between h-[50px] mb-[3%] px-4 md:px-8 ">
+            <div class="w-[50%] md:w-[40%] flex">
+                <img src="./image/logo.png" alt="Ecocraft Logo" class="w-[70%] md:w-[40%]">
+            </div>
+            <div class="hidden md:block">
+                <ul class="flex space-x-4 md:space-x-6 lg:space-x-10  mt-[5%]">
+                    <li><a href="index.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">Home</a></li>
+                    <li><a href="about.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">About Us</a></li>
+                    <li><a href="product.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">Products</a></li>
+                    <li><a href="gallery.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">Gallery</a></li>
+                    <li><a href="#" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-black transition duration-300 text-white px-[20%] py-[12%] will-change-auto hover:will-change-scroll bg-green-700 rounded">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+                <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </section>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white shadow-lg rounded-lg py-2 hidden">
+            <ul class="flex flex-col space-y-2 px-4 mt-[5%]">
+                <li><a href="index.html" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Home</a></li>
+                <li><a href="about.html" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">About Us</a></li>
+                <li><a href="product.html" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Products</a></li>
+                <li><a href="gallery.html" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Gallery</a></li>
+                <li><a href="#" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    
+        <!-- JavaScript for Mobile Menu Toggle -->
+        <script>
+            document.getElementById('menu-toggle').addEventListener('click', function() {
+                var menu = document.getElementById('mobile-menu');
+                menu.classList.toggle('hidden');
+            });
+        </script>
+    </section>
+    
+    
+
+    <!-- <section class=" " >
+        <!-- style="background-image: url(./image/plywoodbg.PNG); -->
+        <!-- <h1 class="text-[34px]  text-center sm:text-[28px] md:text-[32px] lg:text-[40px] inline-block ml-[20px] sm:ml-[50px] md:ml-[150px] lg:ml-[250px] font-thin">
+            <span class="text-green-700 font-bold">Plywood</span> that embodies <br> perfection!
+        </h1>
+    </section> --> -->
+
+    <section>
+        <img src="./image/ecocraft-test.webp" alt="">
+        <h1 class="text-[34px]  text-center sm:text-[28px] md:text-[32px] lg:text-[40px] inline-block ml-[20px] sm:ml-[50px] md:ml-[150px] lg:ml-[250px] font-thin">
+            <!-- <span class="text-green-700 font-bold">Plywood</span> that embodies <br> perfection! -->
+        </h1>
+
+    </section>
+    
+
+    <!-- <section>
+        <section class="wrapper ">
+            <h1 class=" text-[28px] md:text-[40px] text-center mt-[3%]">IDEAL TOOLS FOR <span class="text-green-700">CREATING DREAM SPACES </span></h1>
+            <ul class="flex justify-between  lg:justify-center flex-wrap md:flex-nowrap md:space-x-4  mt-[5%]">
+                <li class=" w-[48%]  mb-[50px] md:w-[22%] items-center  shadow hover:shadow-lg py-[2%] px-[2%]">
+                    <img src="./image/icon-calculator.png" alt="">
+                    <h2 class="text-[22px] ">Plywood Requirement Calculator</h2>
+                </li>
+                <li class=" w-[48%]  mb-[50px] md:w-[22%] items-center  shadow hover:shadow-lg py-[2%] px-[2%] ">
+                    <img src="./image/icon-visualizer.png" alt="">
+                    <h2 class="text-[22px] ">visualizer</h2>
+                </li>
+
+                <li class=" w-[48%]  mb-[50px] md:w-[22%] items-center  shadow hover:shadow-lg py-[2%] px-[2%] ">
+                    <a href="visualise.html">
+                        <img src="./image/icon-color-bar.png" alt="">
+                        <h2 class="text-[22px] ">visualizer</h2>
+                    </a>
+                </li>
+
+                <li class=" w-[48%]  mb-[50px] md:w-[22%] items-center  shadow hover:shadow-lg py-[2%] px-[2%] ">
+                    <img src="./image/product-iconpp.svg" alt="" class="w-[30%]">
+                    <h2 class="text-[22px] ">visualizer</h2>
+                </li>
+
+               
+            </ul>
+        </section>
+
+    </section> -->
+    <!-- unique -->
+
+    
+     <!-- Arrow Button -->
+
+     <button id="scrollTopBtn" class="fixed bottom-4 right-4 p-3 rounded-full bg-gray-600 text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+        <!-- SVG for Up Arrow -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+      </button>
+  
+      <script>
+  
+              // JavaScript to scroll to the top
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+  
+        // Show button when scrolling down
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+  
+        // Scroll to the top when the button is clicked
+        scrollTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+  
+      </script>
+  
+  
+  <!-- arrow button  -->
+    <section class="wrapper pt-8 px-4 md:px-12 lg:px-24">
+        <h1 class="text-[24px] md:text-[36px] lg:text-[40px] text-center text-gray-900 pt-8 opacity-0 transform translate-y-8 transition duration-1000 ease-out" id="heading">
+            Our <span class="text-green-700 ">PVC </span> Choice For Your Interiors
+        </h1>
+        <p class="text-[14px] md:text-[18px] lg:text-[20px] text-center text-gray-700 pt-4 leading-relaxed opacity-0 transform translate-y-8 transition duration-1000 ease-out" id="paragraph">
+            At Ecocraft, our commitment extends beyond de timber from sustainable farmlands underscores our mission to preserve natural ecosystems. As the frontrunners of India's eco-friendly plywood, we take on the responsibility of eradicating social and environmental threats. With state-of-the-art automated technology, we assure timely deliveries within a cost-effective range, all while upholding ecological equilibrium.
+            
+        </p>
+
+    </section>
+
+    <script>
+        document.addEventListener('scroll', function() {
+    const elements = document.querySelectorAll('#heading, #paragraph');
+    
+    elements.forEach(element => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.3;
+
+        if (elementPosition < screenPosition) {
+            element.classList.add('opacity-100', 'translate-y-0');
+        }
+    });
+});
+
+    </script>
+
+    
+    
+
+    <section class="section-wrapper pt-[4%] mt-[2%] w-full items-end" style="background-image: url(/image/ecobg1.jpg);">
+        <section class="flex-wrap wrapper md:flex">
+            <div class="w-full md:w-[40%] pb-6 pl-[10%]">
+                <img src="./image/thunderm.jpg" alt="" class="sm:w-[100%] pr-[9%]  md:w-[100%]  ">
+            </div>
+    
+            <div class="md:w-[48%] mb-[8%]">
+                <img src="./image/PVC-Thunder.png" alt="" class=" w-[20%] rounded pb-[5%]">
+                <div class="mb-[4%] flex">
+                    <a href="javascript:void(0);" onclick="showDescription(this)" class="py-[2%] px-[6%] rounded-full border border-green-800 text-[14px] bg-green-500 mr-[8%]">DESCRIPTION</a>
+                    <a href="javascript:void(0);" onclick="showFeatures(this)" class="py-[2%] px-[6%] rounded-full border border-green-800 text-[14px]">FEATURES</a>
+                </div>
+    
+                <p class="description w-full pb-[5] text-justify md:pt-[3%]">
+                    Eocarft Plus stands at the pinnacle of premium quality plywood. It is approved by Lloyds-United Kingdom, adhering to the British Standard BS 1088. 
+                    Ideal for luxury furniture and exclusively crafted from premium quality imported Gurjan Timber it is manufactured by top-of-the-line technology to deliver ultimate sophistication. Platinum Plus is the best plywood money can buy!
+                </p>
+    
+                <div class="features overflow-x-auto hidden">
+                    <table class="min-w-full bg-white">
+                        <thead class="bg-green-700 text-white">
+                            <tr>
+                                <th class="w-1/3 px-4 py-2">Warranty Coverage</th>
+                                <th class="w-1/3 px-4 py-2">Lifetime - 750%</th>z
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">E-0 Certification</td>
+                                <td class="border px-4 py-2">Available</td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2">Grade</td>
+                                <td class="border px-4 py-2">Lloyd's Register BS: 1088</td>
+                            </tr>
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Uniformity</td>
+                                <td class="border px-4 py-2 flex">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Toughness</td>
+                                <td class="border px-4 py-2 flex">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Termite-proof</td>
+                                <td class="border px-4 py-2 ">
+                                    Yes
+                                </td>
+                            </tr>
+
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Range</td>
+                                <td class="border px-4 py-2 ">
+                                    Exclusive
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    
+                <div class=" pb-[6%] sm:mb-[4%] mt-[5%] flex">
+                    <a href="/gallery.html" class="py-[2%] px-[6%] rounded-full border border-green-800 text-[14px] bg-green-500 mr-[8%]">Explore Usage</a>
+                </div>
+            </div>
+        </section>
+    </section>    
+
+    <!-- third -->
+    
+    <section class="section-wrapper pt-[4%] mt-[2%] w-full items-end" style="">
+        <section class="flex-wrap wrapper md:flex">
+            <div class="w-full md:w-[40%] pb-6 pl-[10%]">
+                <img src="./image/emaraldm.jpg" alt="" class="sm:w-[ 100%] pr-[9%]  md:w-[100%]">
+            </div>
+    
+            <div class="md:w-[48%] mb-[8%]">
+               <a href=""> <img src="./image/PVC-Emerald.png" alt="" class=" w-[20%] rounded pb-[5%]"></a>
+                <div class="mb-[4%] flex">
+                    <a href="javascript:void(0);" onclick="showDescription(this)" class="py-[2%] px-[6%] rounded-full border border-green-800 text-[14px] bg-green-500 mr-[8%]">DESCRIPTION</a>
+                    <a href="javascript:void(0);" onclick="showFeatures(this)" class="py-[2%] px-[6%] rounded-full border border-green-800 text-[14px]">FEATURES</a>
+                </div>
+    
+                <p class="description w-full pb-[5] text-justify md:pt-[3%]">
+                    Eocarft Plus stands at the pinnacle of premium quality plywood. It is approved by Lloyds-United Kingdom, adhering to the British Standard BS 1088. 
+                    Ideal for luxury furniture and exclusively crafted from premium quality imported Gurjan Timber it is manufactured by top-of-the-line technology to deliver ultimate sophistication. Platinum Plus is the best plywood money can buy!
+                </p>
+    
+                <div class="features overflow-x-auto hidden">
+                    <table class="min-w-full bg-white">
+                        <thead class="bg-green-700 text-white">
+                            <tr>
+                                <th class="w-1/3 px-4 py-2">Warranty Coverage</th>
+                                <th class="w-1/3 px-4 py-2">Lifetime - 750%</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">E-0 Certification</td>
+                                <td class="border px-4 py-2">Available</td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2">Grade</td>
+                                <td class="border px-4 py-2">Lloyd's Register BS: 1088</td>
+                            </tr>
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Uniformity</td>
+                                <td class="border px-4 py-2 flex">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Toughness</td>
+                                <td class="border px-4 py-2 flex">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Termite-proof</td>
+                                <td class="border px-4 py-2 ">
+                                    Yes
+                                </td>
+                            </tr>
+
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Range</td>
+                                <td class="border px-4 py-2 ">
+                                    Exclusive
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    
+                <div class=" pb-[6%] sm:mb-[4%] mt-[5%] flex">
+                    <a href="/gallery.html" class="py-[2%] px-[6%] rounded-full border border-green-800 text-[14px] bg-green-500 mr-[8%]">Explore Usage</a>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+
+
+    <script>
+        function showDescription(button) {
+            const section = button.closest('.section-wrapper');
+            section.querySelector('.description').classList.remove('hidden');
+            section.querySelector('.features').classList.add('hidden');
+        }
+    
+        function showFeatures(button) {
+            const section = button.closest('.section-wrapper');
+            section.querySelector('.description').classList.add('hidden');
+            section.querySelector('.features').classList.remove('hidden');
+        }
+    </script>
+    
+    <!-- four -->
+    
+    <section class="section-wrapper pt-[4%] mt-[2%] w-full items-end" style="background-image: url(/image/ecobg1.jpg);">
+        <section class="flex-wrap wrapper md:flex">
+            <div class="w-full md:w-[40%] pb-6 pl-[10%]">
+                <img src="./image/goldm.jpg" alt="" class="sm:w-[100%] pr-[9%]  md:w-[100%]">
+            </div>
+    
+            <div class="md:w-[48%] mb-[8%]">
+                <a href=""> <img src="./image/PVC-Gold.png" alt="" class=" w-[20%] rounded pb-[5%]"></a>
+
+                <div class="mb-[4%] flex">
+                    <a href="javascript:void(0);" onclick="showDescription(this)" class="py-[2%] px-[6%] rounded-full border border-green-800 text-[14px] bg-green-500 mr-[8%]">DESCRIPTION</a>
+                    <a href="javascript:void(0);" onclick="showFeatures(this)" class="py-[2%] px-[6%] rounded-full border border-green-800 text-[14px]">FEATURES</a>
+                </div>
+    
+                <p class="description w-full pb-[5] text-justify md:pt-[3%]">
+                    Eocarft Plus stands at the pinnacle of premium quality plywood. It is approved by Lloyds-United Kingdom, adhering to the British Standard BS 1088. 
+                    Ideal for luxury furniture and exclusively crafted from premium quality imported Gurjan Timber it is manufactured by top-of-the-line technology to deliver ultimate sophistication. Platinum Plus is the best plywood money can buy!
+                </p>
+    
+                <div class="features overflow-x-auto hidden">
+                    <table class="min-w-full bg-white">
+                        <thead class="bg-green-700 text-white">
+                            <tr>
+                                <th class="w-1/3 px-4 py-2">Warranty Coverage</th>
+                                <th class="w-1/3 px-4 py-2">Lifetime - 750%</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">E-0 Certification</td>
+                                <td class="border px-4 py-2">Available</td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2">Grade</td>
+                                <td class="border px-4 py-2">Lloyd's Register BS: 1088</td>
+                            </tr>
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Uniformity</td>
+                                <td class="border px-4 py-2 flex">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Toughness</td>
+                                <td class="border px-4 py-2 flex">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Termite-proof</td>
+                                <td class="border px-4 py-2 ">
+                                    Yes
+                                </td>
+                            </tr>
+
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Range</td>
+                                <td class="border px-4 py-2 ">
+                                    Exclusive
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    
+                <div class=" pb-[6%] sm:mb-[4%] mt-[5%] flex">
+                    <a href="/gallery.html" class="py-[2%] px-[6%] rounded-full border border-green-800 text-[14px] bg-green-500 mr-[8%]">Explore Usage</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+     <!-- five -->
+    
+     <section class="section-wrapper pt-[4%] mt-[2%] w-full items-end" style="background-image: url(/image/ecobg1.jpg);">
+        <section class="flex-wrap wrapper md:flex">
+            <div class="w-full md:w-[40%] pb-6 pl-[10%]">
+                <img src="./image/platinumm.jpg" alt="" class="sm:w-[100%] pr-[9%]  md:w-[100%]">
+            </div>
+    
+            <div class="md:w-[48%] mb-[8%]">
+                <a href=""> <img src="./image/PVC-Platinum.png" alt="" class=" w-[20%] rounded pb-[5%]"></a>
+
+                <div class="mb-[4%] flex">
+                    <a href="javascript:void(0);" onclick="showDescription(this)" class="py-[2%] px-[6%] rounded-full border border-green-800 text-[14px] bg-green-500 mr-[8%]">DESCRIPTION</a>
+                    <a href="javascript:void(0);" onclick="showFeatures(this)" class="py-[2%] px-[6%] rounded-full border border-green-800 text-[14px]">FEATURES</a>
+                </div>
+    
+                <p class="description w-full pb-[5] text-justify md:pt-[3%]">
+                    Eocarft Plus stands at the pinnacle of premium quality plywood. It is approved by Lloyds-United Kingdom, adhering to the British Standard BS 1088. 
+                    Ideal for luxury furniture and exclusively crafted from premium quality imported Gurjan Timber it is manufactured by top-of-the-line technology to deliver ultimate sophistication. Platinum Plus is the best plywood money can buy!
+                </p>
+    
+                <div class="features overflow-x-auto hidden">
+                    <table class="min-w-full bg-white">
+                        <thead class="bg-green-700 text-white">
+                            <tr>
+                                <th class="w-1/3 px-4 py-2">Warranty Coverage</th>
+                                <th class="w-1/3 px-4 py-2">Lifetime - 750%</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">E-0 Certification</td>
+                                <td class="border px-4 py-2">Available</td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2">Grade</td>
+                                <td class="border px-4 py-2">Lloyd's Register BS: 1088</td>
+                            </tr>
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Uniformity</td>
+                                <td class="border px-4 py-2 flex">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Toughness</td>
+                                <td class="border px-4 py-2 flex">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Termite-proof</td>
+                                <td class="border px-4 py-2 ">
+                                    Yes
+                                </td>
+                            </tr>
+
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Range</td>
+                                <td class="border px-4 py-2 ">
+                                    Exclusive
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    
+                <div class=" pb-[6%] sm:mb-[4%] mt-[5%] flex">
+                    <a href="/gallery.html" class="py-[2%] px-[6%] rounded-full border border-green-800 text-[14px] bg-green-500 mr-[8%]">Explore Usage</a>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <!-- six -->
+    
+    <section class="section-wrapper pt-[4%] mt-[2%] w-full items-end" style="background-image: url(/image/ecobg1.jpg);">
+        <section class="flex-wrap wrapper md:flex">
+            <div class="w-full md:w-[40%] pb-6 pl-[10%]">
+                <img src="./image/titaniumm.jpg" alt="" class="sm:w-[100%] pr-[9%]  md:w-[100%]]">
+            </div>
+    
+            <div class="md:w-[48%] mb-[8%]">
+                <a href=""> <img src="./image/PVC-Titanium.png" alt="" class=" w-[20%] rounded pb-[5%]"></a>
+
+                <div class="mb-[4%] flex">
+                    <a href="javascript:void(0);" onclick="showDescription(this)" class="py-[2%] px-[6%] rounded-full border border-green-800 text-[14px] bg-green-500 mr-[8%]">DESCRIPTION</a>
+                    <a href="javascript:void(0);" onclick="showFeatures(this)" class="py-[2%] px-[6%] rounded-full border border-green-800 text-[14px]">FEATURES</a>
+                </div>
+    
+                <p class="description w-full pb-[5] text-justify md:pt-[3%]">
+                    Eocarft Plus stands at the pinnacle of premium quality plywood. It is approved by Lloyds-United Kingdom, adhering to the British Standard BS 1088. 
+                    Ideal for luxury furniture and exclusively crafted from premium quality imported Gurjan Timber it is manufactured by top-of-the-line technology to deliver ultimate sophistication. Platinum Plus is the best plywood money can buy!
+                </p>
+    
+                <div class="features overflow-x-auto hidden">
+                    <table class="min-w-full bg-white">
+                        <thead class="bg-green-700 text-white">
+                            <tr>
+                                <th class="w-1/3 px-4 py-2">Warranty Coverage</th>
+                                <th class="w-1/3 px-4 py-2">Lifetime - 750%</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">E-0 Certification</td>
+                                <td class="border px-4 py-2">Available</td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2">Grade</td>
+                                <td class="border px-4 py-2">Lloyd's Register BS: 1088</td>
+                            </tr>
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Uniformity</td>
+                                <td class="border px-4 py-2 flex">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                    <img src="./image/arrowtable.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Toughness</td>
+                                <td class="border px-4 py-2 flex">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                    <img src="./image/hammer.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Termite-proof</td>
+                                <td class="border px-4 py-2 ">
+                                    Yes
+                                </td>
+                            </tr>
+
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2">Range</td>
+                                <td class="border px-4 py-2 ">
+                                    Exclusive
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    
+                <div class=" pb-[6%] sm:mb-[4%] mt-[5%] flex">
+                    <a href="/gallery.html" class="py-[2%] px-[6%] rounded-full border border-green-800 text-[14px] bg-green-500 mr-[8%]">Explore Usage</a>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+
+
+
+
+    <footer>
+        <section id="greenbg" class=" text-white grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full  py-20 px-10 ">
+    
+          <div class="w-full md:w-[95%]">
+            <img src="./image/logo.png" alt="" class="w-[40%] md:w-[70%]">
+            <p class=" w-full sm:text-[22px] md:text-[18px] text-justify">Founded in 2006, Ecocraft  Plywood has established itself as a leader in the interior infrastructure industry, renowned for its product excellence and streamlined service. The company's consistent commitment to quality and efficiency has made it a hallmark within the sector, setting high standards for others to follow.</p>
+          </div>
+    
+          <div class="flex mt-[15%]">
+            <div class="pl-0 md:pl-10 pt-10 md:pt-0">
+              <h3>Quick Links</h3>
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Gallery</li>
+                <li>Contacts</li>
+              </ul>
+            </div>
+      
+            <div class="pt-10 md:pt-0 pl-10 mt-[%]">
+              <h4 class="pb-[3%]">Products</h4>
+            <ul>
+                <li class="pt-[5%]"><a href="">PVC Foam Board</a></li>
+                <li class="pt-[5%]"><a href="">Plywood</a></li>
+                <li class="pt-[5%]"><a href="">Laminates</a></li>
+                <li class="pt-[5%]"><a href="">MDF</a></li>
+                <li class="pt-[5%]"><a href="">Veneer</a></li>
+                </ul>
+            </div>
+          </div>
+    
+          <div class="pt-10 md:pt-0 mt-[15%]">
+            <h3 class="mb-[2%]">Quick Links</h3>
+            <ul>
+              <li><i class="fa-solid fa-location-dot mr-[2%]"></i> Door No: 5686633, Kuravilangad-Kottayam. 676108</li>
+              <li class="mr-[4%] mt-[2%]"> <i class="fa-solid fa-envelope mr-[2%]"></i>Email info@ecocraft.com</li>
+              <li class="mr-[4%] mt-[2%]"><i class="fa-solid fa-phone mr-[2%] "></i>Support +91 9526744704</li>
+            </ul>
+            <h4 class="flex mt-[2%]">
+              <li class="  instagram "><i class="fa-brands fa-instagram icon1 icon"></i></li>
+              <li class="ml-[5%] twitter pl-[4%]  " ><i class="fa-brands fa-twitter icon2 icon"></i></li>
+              <li class=" ml-[5%] youtube pl-[4%]" ><i class="fa-brands fa-youtube icon3 icon"></i></li>
+              <li class="ml-[5%] facebook pl-[4%] "><i class="fa-brands fa-facebook icon4 icon"></i></li>
+            </h4>
+          </div>
+    
+        </section>
+
+        
+      </footer>
+     
+      <!-- Script for Intersection Observer -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-scroll-up');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.animate-scroll-up').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -29,20 +29,86 @@
 <a href="https://wa.me/9526744704" class="fixed right-0 top-1/2 transform -translate-y-1/2 bg-green-500 text-white py-2 px-4 rounded-l-lg shadow-lg hover:bg-red-600 transition-colors z-50">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
-  <section class="  bg-white fixed top-0 left-0 right-0 z-50 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
-    <section class="wrapper flex items-center justify-between h-[50px] mb-[3%] px-4 md:px-8 ">
-        <div class="w-[50%] md:w-[40%] flex">
-            <img src="./image/logo.png" alt="Ecocraft Logo" class="w-[70%] md:w-[40%]">
-        </div>
-        <div class="hidden md:block">
-            <ul class="flex space-x-4 md:space-x-6 lg:space-x-10  mt-[5%]">
-                <li><a href="index.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">Home</a></li>
-                <li><a href="about.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">About Us</a></li>
-                <li><a href="product.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">Products</a></li>
-                <li><a href="#" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-green-700 transition duration-300">Gallery</a></li>
-                <li><a href="#" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%]  hover:text-black transition duration-300 text-white px-[20%] py-[12%] will-change-auto hover:will-change-scroll bg-green-700 rounded">Contact</a></li>
-            </ul>
-        </div>
+ 
+  <section class="bg-white fixed top-0 left-0 right-0 z-50 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+    <section class="wrapper flex items-center justify-between h-[50px] mb-[3%] px-4 md:px-8">
+      <div class="w-[50%] md:w-[40%] flex">
+          <img src="./image/logo.png" alt="Ecocraft Logo" class="w-[70%] md:w-[40%]">
+      </div>
+      <div class="hidden md:block">
+          <ul class="flex space-x-4 md:space-x-6 lg:space-x-10 mt-[5%]">
+              <li>
+                  <a href="index.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Home</a>
+              </li>
+              <li>
+                  <a href="about.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">About Us</a>
+              </li>
+              <li class="relative group">
+                <a href="product.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">
+                    Products
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-2 p-2 w-40">
+
+                  <li>
+                    <a href="#" onclick="toggleDropdown('blockBoardCategories')" class="block px-4 py-2 text-sm hover:bg-gray-200">PLYWOOD</a>
+                    <!-- Block Board categories -->
+                    <ul id="blockBoardCategories" class="hidden bg-white shadow-lg mt-2 p-2 w-40">
+                        <li><a href="plywood.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Gold</a></li>
+                        <li><a href="plywood.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Silver</a></li>
+                        <li><a href="plywood.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Platinum</a></li>
+                        <li><a href="plywood.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Classic</a></li>
+
+                    </ul>
+
+                    <li>
+                        <a href="#" onclick="toggleDropdown('plywoodCategories')" class="block px-4 py-2 text-sm hover:bg-gray-200">PVC</a>
+                        <!-- Plywood categories -->
+                        <ul id="plywoodCategories" class="hidden bg-white shadow-lg mt-2 p-2 w-40">
+                            <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-200">Thunder</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-200">Titanium</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-200">Platinum</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-200">Gold</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="toggleDropdown('blockBoardCategories')" class="block px-4 py-2 text-sm hover:bg-gray-200">WPC</a>
+                        <!-- Block Board categories -->
+                        <ul id="blockBoardCategories" class="hidden bg-white shadow-lg mt-2 p-2 w-40">
+                            <li><a href="wpc.html" class="block px-4 py-2 text-sm hover:bg-gray-200">3X steel</a></li>
+                            <li><a href="wpc.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Wpc</a></li>
+                            <li><a href="wpc.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Double</a></li>
+                        </ul>
+                    </li>
+
+                     </li>
+
+
+                </ul>
+            </li>
+            
+              <li>
+                  <a href="gallery.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Gallery</a>
+              </li>
+              <li>
+                  <a href="#" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%] hover:text-black transition duration-300 text-white px-[20%] py-[12%] will-change-auto hover:will-change-scroll bg-green-700 rounded">Contact</a>
+              </li>
+          </ul>
+      </div>
+      <!-- dropdown -->
+      <script>
+
+            function toggleDropdown(id) {
+                // Get the dropdown menu element
+                const dropdown = document.getElementById(id);
+                
+                // Toggle the dropdown visibility
+                dropdown.classList.toggle('hidden');
+}
+
+      </script>
+  
+  
         <!-- Mobile Menu Button -->
         <div class="md:hidden flex items-center">
             <button id="menu-toggle" class="text-gray-800 focus:outline-none">
@@ -54,25 +120,62 @@
     </section>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden bg-white shadow-lg rounded-lg py-2 hidden">
-        <ul class="flex flex-col space-y-2 px-4 mt-[5%]">
-            <li><a href="index.html" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Home</a></li>
-            <li><a href="about.html" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">About Us</a></li>
-            <li><a href="product.html" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Products</a></li>
-            <li><a href="#" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Gallery</a></li>
-            <li><a href="#" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Contact</a></li>
-        </ul>
-    </div>
+<div id="mobile-menu" class="md:hidden bg-white shadow-lg rounded-lg py-2 hidden">
+  <ul class="flex flex-col space-y-2 px-4 mt-[5%]">
+      <li><a href="index.html" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Home</a></li>
+      <li><a href="about.html" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">About Us</a></li>
+      
+      <!-- Products Menu with Categories -->
+      <li>
+          <a href="#" onclick="toggleDropdown('productsDropdown')" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Products</a>
+          <ul id="productsDropdown" class="hidden flex flex-col space-y-2 pl-4">
+              <li>
+                  <a href="#" onclick="toggleDropdown('plywoodDropdown')" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">Plywood</a>
+                  <ul id="plywoodDropdown" class="hidden flex flex-col space-y-2 pl-4">
+                      <li><a href="plywood.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">Gold</a></li>
+                      <li><a href="plywood.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">Silver</a></li>
+                      <li><a href="plywood.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">Platinum</a></li>
+                      <li><a href="plywood.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">Classic</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#" onclick="toggleDropdown('pvcDropdown')" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">PVC</a>
+                  <ul id="pvcDropdown" class="hidden flex flex-col space-y-2 pl-4">
+                      <li><a href="pvc.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">Thunder</a></li>
+                      <li><a href="pvc.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">Titanium</a></li>
+                      <li><a href="pvc.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">Platinum</a></li>
+                      <li><a href="pvc.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">Gold</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#" onclick="toggleDropdown('wpcDropdown')" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">WPC</a>
+                  <ul id="wpcDropdown" class="hidden flex flex-col space-y-2 pl-4">
+                      <li><a href="wpc.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">3X steel</a></li>
+                      <li><a href="wpc.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300"> Premium WPC</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </li>
+      
+      <li><a href="gallery.html" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Gallery</a></li>
+      <li><a href="#" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Contact</a></li>
+  </ul>
+</div>
 
-    <!-- JavaScript for Mobile Menu Toggle -->
-    <script>
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            var menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
-    </script>
+<!-- JavaScript for Mobile Menu Toggle -->
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+  });
+
+  function toggleDropdown(id) {
+      const dropdown = document.getElementById(id);
+      dropdown.classList.toggle('hidden');
+  }
+</script>
+
 </section>
-
     
      <!-- Arrow Button -->
 
