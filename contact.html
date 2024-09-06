@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EcoCraft</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* Fade in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Zoom-in animation */
+        @keyframes zoomIn {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.2);
+            }
+        }
+
+        /* Apply zoom-in animation on hover */
+        .zoom:hover {
+            animation: zoomIn 0.3s forwards;
+        }
+    </style>
+</head>
+
+<section class="bg-white fixed top-0 left-0 right-0 z-50 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+    <section class="wrapper flex items-center justify-between h-[50px] mb-[3%] px-4 md:px-8">
+      <div class="w-[50%] md:w-[40%] flex">
+          <img src="./image/logo.png" alt="Ecocraft Logo" class="w-[70%] md:w-[40%]">
+      </div>
+      <div class="hidden md:block">
+          <ul class="flex space-x-4 md:space-x-6 lg:space-x-10 mt-[5%]">
+              <li>
+                  <a href="index.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Home</a>
+              </li>
+              <li>
+                  <a href="about.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">About Us</a>
+              </li>
+              <li class="relative group">
+                <a href="product.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">
+                    Products
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-2 p-2 w-40">
+
+                  <li>
+                    <a href="#" onclick="toggleDropdown('blockBoardCategories')" class="block px-4 py-2 text-sm hover:bg-gray-200">PLYWOOD</a>
+                    <!-- Block Board categories -->
+                    <ul id="blockBoardCategories" class="hidden bg-white shadow-lg mt-2 p-2 w-40">
+                        <li><a href="plywood.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Gold</a></li>
+                        <li><a href="plywood.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Silver</a></li>
+                        <li><a href="plywood.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Platinum</a></li>
+                        <li><a href="plywood.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Classic</a></li>
+
+                    </ul>
+
+                    <li>
+                        <a href="#" onclick="toggleDropdown('plywoodCategories')" class="block px-4 py-2 text-sm hover:bg-gray-200">PVC</a>
+                        <!-- Plywood categories -->
+                        <ul id="plywoodCategories" class="hidden bg-white shadow-lg mt-2 p-2 w-40">
+                            <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-200">Thunder</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-200">Titanium</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-200">Platinum</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-200">Gold</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="toggleDropdown('blockBoardCategories')" class="block px-4 py-2 text-sm hover:bg-gray-200">WPC</a>
+                        <!-- Block Board categories -->
+                        <ul id="blockBoardCategories" class="hidden bg-white shadow-lg mt-2 p-2 w-40">
+                            <li><a href="wpc.html" class="block px-4 py-2 text-sm hover:bg-gray-200">3X steel</a></li>
+                            <li><a href="wpc.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Wpc</a></li>
+                            <li><a href="wpc.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Double</a></li>
+                        </ul>
+                    </li>
+
+                     </li>
+
+
+                </ul>
+            </li>
+            
+              <li>
+                  <a href="gallery.html" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Gallery</a>
+              </li>
+              <li>
+                  <a href="#" class="text-base text-[14px] md:text-lg lg:text-xl hover:border-b-2 border-green-700 mb-[10%] hover:text-black transition duration-300 text-white px-[20%] py-[12%] will-change-auto hover:will-change-scroll bg-green-700 rounded">Contact</a>
+              </li>
+          </ul>
+      </div>
+      <!-- dropdown -->
+      <script>
+
+            function toggleDropdown(id) {
+                // Get the dropdown menu element
+                const dropdown = document.getElementById(id);
+                
+                // Toggle the dropdown visibility
+                dropdown.classList.toggle('hidden');
+}
+
+      </script>
+  
+  
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+            <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Mobile Menu -->
+<div id="mobile-menu" class="md:hidden bg-white shadow-lg rounded-lg py-2 hidden">
+  <ul class="flex flex-col space-y-2 px-4 mt-[5%]">
+      <li><a href="index.html" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Home</a></li>
+      <li><a href="about.html" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">About Us</a></li>
+      
+      <!-- Products Menu with Categories -->
+      <li>
+          <a href="#" onclick="toggleDropdown('productsDropdown')" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Products</a>
+          <ul id="productsDropdown" class="hidden flex flex-col space-y-2 pl-4">
+              <li>
+                  <a href="#" onclick="toggleDropdown('plywoodDropdown')" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">Plywood</a>
+                  <ul id="plywoodDropdown" class="hidden flex flex-col space-y-2 pl-4">
+                      <li><a href="plywood.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">Gold</a></li>
+                      <li><a href="plywood.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">Silver</a></li>
+                      <li><a href="plywood.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">Platinum</a></li>
+                      <li><a href="plywood.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">Classic</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#" onclick="toggleDropdown('pvcDropdown')" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">PVC</a>
+                  <ul id="pvcDropdown" class="hidden flex flex-col space-y-2 pl-4">
+                      <li><a href="pvc.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">Thunder</a></li>
+                      <li><a href="pvc.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">Titanium</a></li>
+                      <li><a href="pvc.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">Platinum</a></li>
+                      <li><a href="pvc.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">Gold</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#" onclick="toggleDropdown('wpcDropdown')" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">WPC</a>
+                  <ul id="wpcDropdown" class="hidden flex flex-col space-y-2 pl-4">
+                      <li><a href="wpc.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300">3X steel</a></li>
+                      <li><a href="wpc.html" class="text-base text-[14px] md:text-lg hover:text-green-700 transition duration-300"> Premium WPC</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </li>
+      
+      <li><a href="gallery.html" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Gallery</a></li>
+      <li><a href="#" class="text-base text-[14px] md:text-lg hover:border-b-2 border-green-700 mb-[10%] hover:text-green-700 transition duration-300">Contact</a></li>
+  </ul>
+</div>
+
+<!-- JavaScript for Mobile Menu Toggle -->
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+  });
+
+  function toggleDropdown(id) {
+      const dropdown = document.getElementById(id);
+      dropdown.classList.toggle('hidden');
+  }
+</script>
+
+</section>
+
+
+<body class="bg-gray-100">
+
+    <!-- Contact Us Section -->
+    <section class="py-12 mt-[8%]">
+        <div class="text-center mb-12">
+            <h2 class="text-xl text-yellow-500">CONTACT US</h2>
+            <h1 class="text-3xl font-bold">Ecocraft Private Limited</h1>
+        </div>
+
+        <!-- Cards container -->
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-0">
+
+            <!-- Card 1 -->
+            <div class="fade-in bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+                <i class='bx bxs-phone text-[90px] text-yellow-500 mb-4'></i>
+                <h3 class="text-lg font-bold">Calling Support</h3>
+                <p class="text-gray-700 mt-2">9447440617</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="fade-in bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+                <i class='bx bx-current-location text-[90px] text-yellow-500 mb-4'></i>
+                <h3 class="text-lg font-bold">Office Location</h3>
+                <p class="text-gray-700 mt-2 text-center">EcoCraft Pvt. Ltd. Door No: 5686633, Vairamkode Road,
+                    Koloopalam, Codacal Post. kuruvilagand,Kottayam Dt. 676 108</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="fade-in bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+                <i class='bx bx-envelope text-[90px] text-yellow-500 mb-4'></i>
+                <h3 class="text-lg font-bold">Email Information</h3>
+                <p class="text-gray-700 mt-2">info@ecocraft.com</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full h-96 md:h-[500px]">
+        <iframe 
+            class="w-full h-full" 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15729.394036582422!2d76.562613!3d9.7365173!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07d14508d8e601%3A0xf4fc301f30ba3ca2!2sStar%20plywoods!5e0!3m2!1sen!2sin!4v1725625928598!5m2!1sen!2sin" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    
+    
+
+</body>
+
+</html>
